@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import TableComponent from "../components/TableComponent";
-import Loader from "../components/Loader"; // Import your Loader component
+import Loader from "../components/Loader"; 
 import { Icon } from "@iconify/react";
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
 
 export default function Student() {
   const [loading, setLoading] = useState(true);
@@ -39,8 +40,9 @@ export default function Student() {
   }
 
   return (
-    <div className="p-10">
+    <div className="p-3">
       <div className="flex justify-between mb-2">
+        {/* <Link to="/students/create">back to student</Link> */}
         <h1 className="text-2xl font-bold text-blue-500">Student Records</h1>
         <Button
           name="Add Student"

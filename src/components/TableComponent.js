@@ -13,7 +13,7 @@ const Table = ({ columns, data }) => {
     state: { pageIndex, pageSize, filters},
     gotoPage,
   } = useTable(
-    { columns, data, initialState: { pageIndex: 0, pageSize: 10 } },
+    { columns, data, initialState: { pageIndex: 0, pageSize: 9 } },
     useFilters,
     useSortBy,
     usePagination
